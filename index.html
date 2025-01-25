@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <script>vkBridge.send("VKWebAppInit", {});</script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Счет: <span id="score">0</span></h1>
+        <button id="clickButton" class="click-button">
+            <div class="img-shadow">
+                <img src="https://sun9-41.userapi.com/impg/k9wQD-MfFjAsTE9BBhmJwl2nawKv7_KJFVpNEQ/14OpfWQqNQs.jpg?size=2560x1920&quality=95&sign=e734fc46c503b4ea9b2bd2ae8c752a9f&type=album" alt="Кнопка">
+            </div>    
+        </button>
+        <audio id="clickSound" src="click-sound.mp3"></audio>
+        <div id="star" class="star"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

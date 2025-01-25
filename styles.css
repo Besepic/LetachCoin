@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://habrastorage.org/webt/yv/nv/op/yvnvop3dfq_liadlio7b8mk0iug.jpeg');
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+    text-shadow:
+    2px 0 black,
+    0 -2px black,
+    -2px 0 black,
+    0 2px black;
+}
+
+.container {
+    text-align: center;
+}
+
+.click-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-shadow{
+    filter: drop-shadow(10px 10px 24px rgba(0, 0, 0, 0.5)); 
+}
+
+.click-button img {
+    object-fit: cover;
+    max-width: 300px;
+    height: auto;
+    clip-path: circle(100px at 50% 50%);
+    
+}
+
+button:hover {
+    top: 2px;
+  }
+  
+button:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+.star {
+    position: absolute;
+    width: 50px; /* Размер звезды */
+    height: 50px; /* Размер звезды */
+    background-image: url('https://gas-kvas.com/grafic/uploads/posts/2023-09/1695835011_gas-kvas-com-p-kartinki-zvezdochka-21.png');
+    background-size: cover;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(0);
+        opacity: 0;
+    }
+}
